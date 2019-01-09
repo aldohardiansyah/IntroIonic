@@ -1,14 +1,70 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+    <div class="container" fxLayout="column" fxLayoutAlign="center center">
+
+        <div class="balance-box">
+            <ion-label> Current Ballance </ion-label>
+            <div class="balance-section" fxLayout="row">
+                <ion-label> IDR </ion-label>
+                <ion-label> 800.000 </ion-label>
+            </div>
+            <button ion-button outline round>Hide Balance</button>
+        </div>
+
+
+        <div class="top-box" fxLayout="row">
+
+            <div class="left-box" fxFlex="150px" fxLayoutAlign="center center" (click)="toWithdraw()">
+                <h1>Withdraw</h1>
+            </div>
+
+            <div class="value-list" fxFlex="" fxLayout="row" fxLayoutAlign="space-around start" padding>
+                <button fxFlex="40%" ion-button>100.000</button>
+                <button fxFlex="40%" ion-button>200.000</button>
+                <button fxFlex="40%" ion-button>300.000</button>
+                <button fxFlex="40%" ion-button>400.000</button>
+            </div>
+
+            <div class="other-box" fxLayout="column" fxFlex="150px">
+                <h1>Other</h1>
+                <ion-label> Amount </ion-label>
+            </div>
+
+        </div>
+
+        <div class="bottom-box" fxLayout="row">
+
+            <div class="left-box" fxFlex="150px">
+                <h1>Deposit</h1>
+            </div>
+
+            <div class="value-list" fxFlex="" fxLayout="column">
+                <div class="value-section" fxLayout="row" fxLayoutAlign="space-between start">
+                    <ion-label>Tokopedia</ion-label>
+                    <ion-label>200.000</ion-label>
+                </div>
+            </div>
+            <div class="other-box" fxLayout="column" fxFlex="150px">
+                <h1> More </h1>
+                <ion-label>Services</ion-label>                
+            </div>
+        </div>
+
+    </div>
+
 </ion-content>
